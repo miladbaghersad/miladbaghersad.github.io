@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research | Milad Baghersad</title>
+  <meta name="description" content="Research by Milad Baghersad on decision design under uncertainty, information design, donation-menu design, analytics, AI-enabled decision systems, and resilience." />
+  <link rel="canonical" href="https://miladbaghersad.github.io/research.html" />
+  <meta property="og:title" content="Research | Milad Baghersad" />
+  <meta property="og:description" content="Research agenda of Milad Baghersad at the intersection of operations management, information systems, analytics, AI, and resilience." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://miladbaghersad.github.io/research.html" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Unifying theme block */
+    .framework {
+      display: grid; grid-template-columns: 200px 1fr;
+      gap: 3rem; padding: 2.5rem 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 4rem;
+    }
+    .framework-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .72rem; color: var(--muted); letter-spacing: 1.5px;
+      padding-top: .4rem;
+    }
+    .framework-body {
+      font-family: 'Instrument Serif', serif;
+      font-size: 1.6rem; line-height: 1.4; letter-spacing: -.3px;
+      color: var(--ink-soft);
+    }
+    .framework-body i { color: var(--accent); }
+
+    /* Stream block */
+    .stream {
+      display: grid; grid-template-columns: 1fr 2fr;
+      gap: 3.5rem; padding: 3rem 0;
+      border-top: 1px solid var(--line);
+    }
+    .stream:last-of-type { border-bottom: 1px solid var(--line); }
+    .stream-left { position: sticky; top: 100px; align-self: start; }
+    .stream-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .78rem; color: var(--accent); letter-spacing: 2px;
+      margin-bottom: 1rem;
+    }
+    .stream-title {
+      font-family: 'Instrument Serif', serif;
+      font-size: 2.3rem; font-weight: 400; line-height: 1.05;
+      letter-spacing: -.8px; margin-bottom: 1rem;
+    }
+    .stream-title i { color: var(--accent); }
+    .stream-sector {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .72rem; color: var(--muted); letter-spacing: 1.2px;
+      padding: .25rem .6rem; border: 1px solid var(--line-dk);
+      display: inline-block; margin-bottom: 1.2rem;
+    }
+    .stream-lede {
+      font-size: .95rem; color: var(--ink-soft); line-height: 1.7;
+    }
+
+    .proj-list { }
+    .proj-item {
+      padding: 1.3rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .proj-item:first-child { border-top: 1px solid var(--line); }
+    .proj-item:last-child { border-bottom: none; }
+    .proj-kicker {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .68rem; color: var(--muted); letter-spacing: 1.2px;
+      margin-bottom: .4rem;
+    }
+    .proj-kicker.active { color: var(--accent); }
+    .proj-kicker.active::before { content: '● '; }
+    .proj-title {
+      font-family: 'Instrument Serif', serif;
+      font-size: 1.3rem; font-weight: 400; line-height: 1.3;
+      letter-spacing: -.2px; color: var(--ink);
+    }
+    .proj-desc {
+      font-size: .88rem; color: var(--muted); line-height: 1.65;
+      margin-top: .5rem;
+    }
+    .proj-meta {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .72rem; color: var(--muted); letter-spacing: 1px;
+      margin-top: .5rem;
+    }
+    .proj-meta .dot { color: var(--line-dk); margin: 0 .4rem; }
+    .proj-venue { color: var(--ink-soft); font-style: italic; }
+
+    /* Foundation journals strip */
+    .foundation-strip {
+      display: flex; flex-wrap: wrap; gap: .4rem; margin-top: 1.2rem;
+    }
+    .foundation-strip .pill {
+      font-size: .72rem; padding: .3rem .75rem;
+    }
+
+    /* Under review */
+    .review-item {
+      display: grid; grid-template-columns: 140px 1fr auto;
+      gap: 2rem; padding: 2rem 0;
+      border-bottom: 1px solid var(--line);
+      align-items: start;
+    }
+    .review-item:first-child { border-top: 1px solid var(--line); }
+    .review-status-col {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .72rem; letter-spacing: 1px;
+      padding-top: .4rem;
+    }
+    .review-status-col .under-review { color: var(--accent); }
+    .review-status-col .under-review::before { content: '● '; }
+    .review-status-col .draft { color: var(--muted); }
+    .review-status-col .draft::before { content: '○ '; }
+    .review-status-col .working { color: var(--gold); }
+    .review-status-col .working::before { content: '◐ '; }
+    .review-title {
+      font-family: 'Instrument Serif', serif;
+      font-size: 1.35rem; font-weight: 400; line-height: 1.3;
+      letter-spacing: -.3px; color: var(--ink);
+    }
+    .review-authors {
+      font-size: .82rem; color: var(--muted); margin-top: .4rem;
+    }
+    .review-authors strong { color: var(--ink); font-weight: 600; }
+    .review-venue {
+      font-size: .85rem; color: var(--ink-soft); font-style: italic;
+      margin-top: .4rem;
+    }
+    .review-badges {
+      display: flex; flex-direction: column; gap: .3rem; align-items: flex-end;
+    }
+
+    /* Grants */
+    .grant-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 1px; background: var(--line); border: 1px solid var(--line);
+    }
+    .grant-cell { background: var(--bg); padding: 2rem 2rem; }
+    .grant-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .72rem; color: var(--muted); letter-spacing: 1.5px;
+      margin-bottom: 1rem;
+    }
+    .grant-amount {
+      font-family: 'Instrument Serif', serif;
+      font-size: 3rem; font-weight: 400; line-height: 1;
+      color: var(--ink); letter-spacing: -1.5px;
+    }
+    .grant-amount i { color: var(--accent); }
+    .grant-title {
+      font-size: .98rem; font-weight: 600; margin-top: 1rem;
+    }
+    .grant-sub { font-size: .84rem; color: var(--muted); margin-top: .3rem; }
+
+    /* Methods row */
+    .methods-row {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 1px; background: var(--line); border: 1px solid var(--line);
+    }
+    .method-cell {
+      background: var(--bg); padding: 1.8rem 1.5rem;
+    }
+    .method-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .68rem; color: var(--accent); letter-spacing: 1.5px;
+      margin-bottom: .6rem;
+    }
+    .method-cell h4 {
+      font-family: 'Instrument Serif', serif;
+      font-size: 1.2rem; font-weight: 400;
+      line-height: 1.2; letter-spacing: -.2px;
+      margin-bottom: .4rem;
+    }
+    .method-cell p { font-size: .8rem; color: var(--muted); line-height: 1.55; }
+
+    @media (max-width: 900px) {
+      .stream { grid-template-columns: 1fr; gap: 1.5rem; }
+      .stream-left { position: static; }
+      .framework { grid-template-columns: 1fr; gap: 1rem; }
+      .framework-body { font-size: 1.3rem; }
+      .methods-row { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 760px) {
+      .review-item { grid-template-columns: 1fr; gap: .6rem; }
+      .review-badges { flex-direction: row; align-items: flex-start; }
+      .grant-grid { grid-template-columns: 1fr; }
+      .methods-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="index.html">Milad <i>Baghersad</i></a>
+  <input class="nav-toggle" type="checkbox" id="nav-toggle-research" aria-label="Toggle navigation" />
+  <label class="nav-menu-toggle" for="nav-toggle-research" aria-hidden="true">
+    <span></span><span></span><span></span>
+  </label>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="research.html" class="active">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="cv.html">CV</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="ph-kicker">— RESEARCH · DECISION DESIGN UNDER UNCERTAINTY</div>
+    <h1>The architecture of <i>decisions</i>.</h1>
+    <p>I study how organizations design decisions under uncertainty — when outcomes depend jointly on information, human behavior, operational constraints, and data. My work sits at the intersection of operations management, information systems, and business analytics.</p>
+  </div>
+</div>
+
+<div class="page">
+
+  <!-- Unifying theme -->
+  <section>
+    <div class="sec-marker">
+      <span class="sec-num">00 / THEME</span>
+      <div class="sec-title"><h2>Unifying <i>idea</i></h2></div>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="framework">
+      <div class="framework-label">— ORGANIZING QUESTION</div>
+      <div class="framework-body">
+        Performance depends not only on resources and incentives, but on the <i>architecture of decisions</i> — what information is disclosed, what choices are offered, how actors respond, and how data and analytics support the resulting decisions. How should organizations design information, choices, and analytical systems to improve decision quality under uncertainty?
+      </div>
+    </div>
+  </section>
+
+  <!-- Foundation -->
+  <section>
+    <div class="sec-marker">
+      <span class="sec-num">01 / FOUNDATION</span>
+      <div class="sec-title"><h2>Published <i>foundation</i></h2></div>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="stream">
+      <div class="stream-left">
+        <div class="stream-num">— RESILIENCE &amp; HIGH-STAKES SYSTEMS</div>
+        <div class="stream-sector">SUPPLY CHAINS · PUBLIC SECTOR</div>
+        <p class="stream-lede">My published work has established a foundation in consequential decision environments — where uncertainty, interdependence, and limited resources make design choices especially important.</p>
+        <div class="foundation-strip">
+          <span class="pill">POM</span>
+          <span class="pill">EJOR</span>
+          <span class="pill">DSci</span>
+          <span class="pill">IJPR</span>
+          <span class="pill">IJPE</span>
+          <span class="pill">Risk Analysis</span>
+          <span class="pill">Regional Studies</span>
+        </div>
+      </div>
+      <div class="proj-list">
+        <div class="proj-item">
+          <div class="proj-kicker">STREAM A</div>
+          <div class="proj-title">Supply chain resilience &amp; sourcing under disruption risk</div>
+          <div class="proj-desc">Empirical, behavioral, and analytical studies of how firms prepare for, absorb, and recover from supply chain disruptions — including the performance implications of operational strategies.</div>
+        </div>
+        <div class="proj-item">
+          <div class="proj-kicker">STREAM B</div>
+          <div class="proj-title">Community &amp; public-sector resilience</div>
+          <div class="proj-desc">Pandemic response coordination, epidemic investment, and equity–efficiency tradeoffs in critical infrastructure planning — measuring and designing for resilience in public-service systems.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stream 1 -->
+  <section>
+    <div class="sec-marker">
+      <span class="sec-num">02 / CURRENT</span>
+      <div class="sec-title"><h2>Information <i>design</i></h2></div>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="stream">
+      <div class="stream-left">
+        <div class="stream-num">— DIRECTION ONE</div>
+        <div class="stream-sector">COLLECTIVE-ACTION · VOLUNTEER SYSTEMS</div>
+        <p class="stream-lede">How information disclosure shapes participation and coordination in decentralized systems. Outcomes depend not only on incentives, but on what participants know about others, when they know it, and how disclosure affects belief and behavior — information as an endogenous design variable.</p>
+      </div>
+      <div class="proj-list">
+        <div class="proj-item">
+          <div class="proj-kicker active">ONGOING</div>
+          <div class="proj-title">Strategic Information Disclosure in Volunteer Mobilization</div>
+          <div class="proj-desc">How disclosure policies — what volunteers see about others' participation, when, and how — influence volunteer behavior and system-level outcomes in collective-action settings.</div>
+        </div>
+        <div class="proj-item">
+          <div class="proj-kicker">FORWARD</div>
+          <div class="proj-title">Disclosure, transparency &amp; coordination on digital platforms</div>
+          <div class="proj-desc">Bridging operations management, information systems, and applied microeconomic theory — treating information structure as an operational decision variable in volunteer platforms, nonprofit operations, and other digitally mediated environments.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stream 2 -->
+  <section>
+    <div class="sec-marker">
+      <span class="sec-num">03 / CURRENT</span>
+      <div class="sec-title"><h2>Donation-menu <i>design</i></h2></div>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="stream">
+      <div class="stream-left">
+        <div class="stream-num">— DIRECTION TWO</div>
+        <div class="stream-sector">HUMANITARIAN FUNDING · NONPROFIT OPS</div>
+        <p class="stream-lede">How choice architectures can balance donor preferences with organizational flexibility. Donors prefer earmarked giving; organizations need discretion to reallocate as needs evolve. Reframing restricted giving as a design problem rather than an exogenous constraint.</p>
+      </div>
+      <div class="proj-list">
+        <div class="proj-item">
+          <div class="proj-kicker active">WORKING PAPER</div>
+          <div class="proj-title">Donation Menu Design Under Earmarking: Endogenizing Flexibility in Humanitarian Funding</div>
+          <div class="proj-desc">How nonprofits can actively design donation menus to influence donor choice and improve downstream allocation — studying the interaction between donor heterogeneity, menu structure, funding flexibility, and operational performance.</div>
+        </div>
+        <div class="proj-item">
+          <div class="proj-kicker">FORWARD</div>
+          <div class="proj-title">Analytical &amp; institutional grounding in humanitarian funding systems</div>
+          <div class="proj-desc">Deepening the stream by integrating analytical models with richer empirical and institutional evidence on humanitarian and nonprofit funding mechanisms — where donor preferences, operational uncertainty, and restricted funding interact.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stream 3 -->
+  <section>
+    <div class="sec-marker">
+      <span class="sec-num">04 / CURRENT</span>
+      <div class="sec-title"><h2>Analytics &amp; <i>AI</i></h2></div>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="stream">
+      <div class="stream-left">
+        <div class="stream-num">— DIRECTION THREE</div>
+        <div class="stream-sector">AI-ENABLED DECISION SYSTEMS</div>
+        <p class="stream-lede">Analytics and AI as a core capability — not a side interest — that unifies my research. From mobility data and IRS 990 records to retrieval-augmented enterprise AI, I study how organizations can deploy analytics effectively while managing vulnerabilities around data quality, security, robustness, and trust.</p>
+      </div>
+      <div class="proj-list">
+        <div class="proj-item">
+          <div class="proj-kicker active">WORKING PAPER</div>
+          <div class="proj-title">Risk-Based Security Investment for Retrieval-Augmented Enterprise AI under Data Poisoning</div>
+          <div class="proj-desc">How organizations should allocate security investment across retrieval-augmented AI pipelines facing adversarial data-poisoning threats — linking operations and decision-support design with emerging AI vulnerabilities.</div>
+        </div>
+        <div class="proj-item">
+          <div class="proj-kicker">PUBLISHED</div>
+          <div class="proj-title">Adaptive cyber disaster management</div>
+          <div class="proj-desc">Designing adaptive recovery and response processes for organizations facing cyber disasters — a bridge from my resilience work into AI-enabled, cyber-physical decision settings.</div>
+        </div>
+        <div class="proj-item">
+          <div class="proj-kicker">FORWARD</div>
+          <div class="proj-title">Trustworthy decision systems: governance, reliability, human–AI interaction</div>
+          <div class="proj-desc">Studying the settings where algorithmic support and human judgment interact — model reliability, governance, and the design of decision-support systems that are effective, secure, trustworthy, and resilient.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Methods -->
+  <section>
+    <div class="sec-marker">
+      <span class="sec-num">05 / METHODS</span>
+      <div class="sec-title"><h2>Pluralistic <i>toolkit</i></h2></div>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="methods-row">
+      <div class="method-cell">
+        <div class="method-num">→ 01</div>
+        <h4>Analytical modeling</h4>
+        <p>Optimization, stochastic and robust modeling, game-theoretic formulations.</p>
+      </div>
+      <div class="method-cell">
+        <div class="method-num">→ 02</div>
+        <h4>Empirical methods</h4>
+        <p>Econometrics, behavioral experiments, and archival analysis of administrative data.</p>
+      </div>
+      <div class="method-cell">
+        <div class="method-num">→ 03</div>
+        <h4>Network analysis</h4>
+        <p>Graph construction, community detection, and network-based policy design.</p>
+      </div>
+      <div class="method-cell">
+        <div class="method-num">→ 04</div>
+        <h4>Computational analytics</h4>
+        <p>Web scraping, Python and R pipelines, large-scale data processing, ML.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Under Review -->
+  <section id="review">
+    <div class="sec-marker">
+      <span class="sec-num">06 / IN PROGRESS</span>
+      <div class="sec-title"><h2>Under <i>review</i></h2></div>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="review-item">
+      <div class="review-status-col"><span class="under-review">3RD ROUND</span></div>
+      <div>
+        <div class="review-title">Benefits of Extreme Political Stability and Instability of Supplier Countries for Firms: The U-Shaped Relationship</div>
+        <div class="review-authors">Namdar, J., Modi, S., Azadegan, A., <strong>Baghersad, M.</strong></div>
+        <div class="review-venue">Production and Operations Management</div>
+      </div>
+      <div class="review-badges">
+        <span class="badge badge-ft50">FT50</span>
+        <span class="badge badge-ajg">AJG 4</span>
+      </div>
+    </div>
+
+    <div class="review-item">
+      <div class="review-status-col"><span class="under-review">1ST ROUND</span></div>
+      <div>
+        <div class="review-title">Characterizing the Resilience of Public Service Systems during Disasters</div>
+        <div class="review-authors">Zobel, C. W., Pamukcu, D., <strong>Baghersad, M.</strong></div>
+        <div class="review-venue">Production and Operations Management</div>
+      </div>
+      <div class="review-badges">
+        <span class="badge badge-ft50">FT50</span>
+        <span class="badge badge-ajg">AJG 4</span>
+      </div>
+    </div>
+
+    <div class="review-item">
+      <div class="review-status-col"><span class="working">WORKING</span></div>
+      <div>
+        <div class="review-title">Donation Menu Design Under Earmarking: Endogenizing Flexibility in Humanitarian Funding</div>
+        <div class="review-authors"><strong>Baghersad, M.</strong></div>
+        <div class="review-venue">Working paper</div>
+      </div>
+      <div class="review-badges">
+        <span class="badge badge-gray">WP</span>
+      </div>
+    </div>
+
+    <div class="review-item">
+      <div class="review-status-col"><span class="working">WORKING</span></div>
+      <div>
+        <div class="review-title">Strategic Information Disclosure in Volunteer Mobilization</div>
+        <div class="review-authors"><strong>Baghersad, M.</strong></div>
+        <div class="review-venue">Working paper</div>
+      </div>
+      <div class="review-badges">
+        <span class="badge badge-gray">WP</span>
+      </div>
+    </div>
+
+    <div class="review-item">
+      <div class="review-status-col"><span class="working">WORKING</span></div>
+      <div>
+        <div class="review-title">Risk-Based Security Investment for Retrieval-Augmented Enterprise AI under Data Poisoning</div>
+        <div class="review-authors"><strong>Baghersad, M.</strong></div>
+        <div class="review-venue">Working paper</div>
+      </div>
+      <div class="review-badges">
+        <span class="badge badge-gray">WP</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Grants -->
+  <section id="grants">
+    <div class="sec-marker">
+      <span class="sec-num">07 / FUNDING</span>
+      <div class="sec-title"><h2>Grants &amp; <i>awards</i></h2></div>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="grant-grid">
+      <div class="grant-cell">
+        <div class="grant-label">— 2021 · CO-PI</div>
+        <div class="grant-amount">$<i>20</i>K</div>
+        <div class="grant-title">FAU COECS-ISENSE Seed Funding</div>
+        <div class="grant-sub">Florida Atlantic University</div>
+      </div>
+      <div class="grant-cell">
+        <div class="grant-label">— 2016 · PI</div>
+        <div class="grant-amount">$<i>7.5</i>K</div>
+        <div class="grant-title">Doctoral Summer Research Grant</div>
+        <div class="grant-sub">Pamplin College of Business, Virginia Tech</div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-name">Milad <i>Baghersad</i></div>
+    <div class="footer-meta">
+      © 2026 · FLORIDA ATLANTIC UNIVERSITY ·
+      <a href="mailto:mbaghersad@fau.edu">MBAGHERSAD@FAU.EDU</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

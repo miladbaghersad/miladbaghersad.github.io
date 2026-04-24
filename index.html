@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Milad Baghersad | Associate Professor at Florida Atlantic University</title>
+  <meta name="description" content="Milad Baghersad is an Associate Professor of Information Technology and Operations Management at Florida Atlantic University. His research focuses on operations management, information systems, business analytics, AI, and decision design under uncertainty." />
+  <link rel="canonical" href="https://miladbaghersad.github.io/" />
+  <meta property="og:title" content="Milad Baghersad | Associate Professor at Florida Atlantic University" />
+  <meta property="og:description" content="Academic website of Milad Baghersad, Associate Professor of Information Technology and Operations Management at Florida Atlantic University." />
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://miladbaghersad.github.io/" />
+  <meta property="og:image" content="https://miladbaghersad.github.io/photo_2026-04-24_08-48-40.jpg" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Milad Baghersad",
+    "url": "https://miladbaghersad.github.io/",
+    "image": "https://miladbaghersad.github.io/photo_2026-04-24_08-48-40.jpg",
+    "jobTitle": "Associate Professor",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Florida Atlantic University",
+      "url": "https://www.fau.edu/"
+    },
+    "worksFor": {
+      "@type": "CollegeOrUniversity",
+      "name": "Florida Atlantic University",
+      "url": "https://www.fau.edu/"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Virginia Tech",
+      "url": "https://www.vt.edu/"
+    },
+    "sameAs": [
+      "https://scholar.google.com/citations?user=qv0lAK8AAAAJ&hl=en&oi=ao",
+      "https://www.linkedin.com/in/miladbaghersad/",
+      "https://orcid.org/0000-0002-2748-9577",
+      "https://business.fau.edu/faculty-research/faculty-profiles/profile/mbaghersad.php"
+    ],
+    "knowsAbout": [
+      "Operations Management",
+      "Information Systems",
+      "Business Analytics",
+      "Supply Chain Resilience",
+      "Artificial Intelligence",
+      "Decision Design Under Uncertainty"
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ─── HERO ─── */
+    .hero { padding: 5rem 3rem 7rem; border-bottom: 1px solid var(--line); }
+    .hero-grid {
+      max-width: 1100px; margin: 0 auto;
+      display: grid; grid-template-columns: 1.2fr .8fr;
+      gap: 5rem; align-items: center;
+    }
+    .hero-kicker {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .8rem; color: var(--muted); letter-spacing: 1px;
+      margin-bottom: 1.8rem; display: flex; align-items: center; gap: .5rem;
+    }
+    .hero-kicker::before {
+      content: ''; display: block; width: 30px; height: 1px; background: var(--accent);
+    }
+    .hero h1 {
+      font-family: 'Instrument Serif', serif;
+      font-size: clamp(3.5rem, 8vw, 6.2rem);
+      font-weight: 400; line-height: .95;
+      letter-spacing: -2.5px;
+      color: var(--ink);
+    }
+    .hero h1 i { color: var(--accent); font-style: italic; }
+    .hero-role {
+      margin-top: 2rem; font-size: 1.15rem; color: var(--ink-soft);
+      line-height: 1.5; max-width: 480px;
+    }
+    .hero-role strong { font-weight: 600; }
+    .hero-affil {
+      margin-top: .7rem; font-family: 'JetBrains Mono', monospace;
+      font-size: .8rem; color: var(--muted); letter-spacing: .5px;
+    }
+    .hero-actions {
+      margin-top: 2.5rem; display: flex; flex-wrap: wrap; gap: .7rem;
+    }
+
+    /* Photo */
+    .hero-photo-wrap {
+      position: relative; width: 100%; aspect-ratio: 4/5;
+      max-width: 360px; margin-left: auto;
+    }
+    .hero-photo-block {
+      position: absolute; top: 20px; right: -20px;
+      width: 100%; height: 100%; background: var(--accent);
+      z-index: 0;
+    }
+    .hero-photo {
+      position: relative; z-index: 1;
+      width: 100%; height: 100%; object-fit: cover;
+      display: block;
+      filter: grayscale(.1) contrast(1.02);
+    }
+    .hero-photo-label {
+      position: absolute; bottom: -20px; left: -20px; z-index: 2;
+      background: var(--bg); border: 1px solid var(--line-dk);
+      padding: .5rem 1rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .72rem; color: var(--muted); letter-spacing: .8px;
+    }
+    .hero-photo-label strong { color: var(--ink); font-weight: 600; }
+
+    /* ─── STATS STRIP ─── */
+    .stats-strip {
+      border-bottom: 1px solid var(--line);
+      background: var(--bg);
+    }
+    .stats-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      padding: 0 3rem;
+    }
+    .stat-cell {
+      padding: 2rem 1.5rem; border-right: 1px solid var(--line);
+    }
+    .stat-cell:last-child { border-right: none; }
+    .stat-num {
+      font-family: 'Instrument Serif', serif;
+      font-size: 3.2rem; font-weight: 400;
+      color: var(--ink); line-height: 1; letter-spacing: -2px;
+    }
+    .stat-num i { color: var(--accent); }
+    .stat-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .72rem; color: var(--muted);
+      margin-top: .5rem; letter-spacing: .8px;
+    }
+
+    /* ─── ABOUT ─── */
+    .about-grid {
+      display: grid; grid-template-columns: 1fr 1fr 1fr;
+      gap: 3rem;
+    }
+    .about-lead {
+      grid-column: 1 / 3;
+      font-family: 'Instrument Serif', serif;
+      font-size: 1.85rem; line-height: 1.35;
+      color: var(--ink); letter-spacing: -.5px;
+    }
+    .about-lead i { color: var(--accent); }
+    .about-body {
+      font-size: .95rem; color: var(--ink-soft);
+      line-height: 1.75; grid-column: 1 / 3;
+    }
+    .about-body p { margin-bottom: 1rem; }
+    .about-body p:last-child { margin-bottom: 0; }
+    .about-body strong { font-weight: 600; color: var(--ink); }
+
+    .contact-block {
+      grid-column: 3 / 4; grid-row: 1 / 3;
+      border-left: 1px solid var(--line);
+      padding-left: 2rem;
+    }
+    .contact-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .72rem; color: var(--muted); letter-spacing: 1.5px;
+      margin-bottom: 1rem;
+    }
+    .contact-row { margin-bottom: 1.2rem; }
+    .contact-row-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .7rem; color: var(--faint); letter-spacing: 1px;
+      margin-bottom: .2rem;
+    }
+    .contact-row-val { font-size: .88rem; color: var(--ink); }
+    .contact-row-val a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--accent); }
+    .contact-row-val a:hover { color: var(--accent); }
+
+    /* ─── RESEARCH PREVIEW ─── */
+    .interests-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 1px; background: var(--line);
+      border: 1px solid var(--line);
+    }
+    .interest-cell {
+      background: var(--bg); padding: 2rem 1.8rem;
+      transition: background .2s;
+    }
+    .interest-cell:hover { background: var(--accent-tint); }
+    .interest-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .72rem; color: var(--accent); letter-spacing: 1px;
+      margin-bottom: 1rem;
+    }
+    .interest-cell h3 {
+      font-family: 'Instrument Serif', serif;
+      font-size: 1.4rem; font-weight: 400;
+      color: var(--ink); letter-spacing: -.3px;
+      margin-bottom: .6rem; line-height: 1.2;
+    }
+    .interest-cell p {
+      font-size: .85rem; color: var(--muted);
+      line-height: 1.65;
+    }
+
+    /* ─── RECENT PUBS ─── */
+    .pub-row {
+      display: grid; grid-template-columns: 80px 1fr auto;
+      gap: 2rem; padding: 2rem 1rem;
+      border-bottom: 1px solid var(--line);
+      border-left: 3px solid transparent;
+      align-items: start; transition: background .2s, border-color .2s;
+    }
+    .pub-row:hover { background: rgba(0,51,102,.035); border-left-color: var(--accent); }
+    .pub-row:first-child { border-top: 1px solid var(--line); }
+    .pub-year {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .78rem; color: var(--muted); letter-spacing: 1px;
+      padding-top: .3rem;
+    }
+    .pub-title {
+      font-family: 'Instrument Serif', serif;
+      font-size: 1.35rem; font-weight: 400; line-height: 1.3;
+      color: var(--ink); letter-spacing: -.3px;
+    }
+    .pub-authors {
+      font-size: .82rem; color: var(--muted);
+      margin-top: .5rem; line-height: 1.6;
+    }
+    .pub-authors strong { color: var(--ink); font-weight: 600; }
+    .pub-venue {
+      font-size: .85rem; color: var(--ink-soft);
+      margin-top: .4rem; font-style: italic;
+    }
+    .pub-badges {
+      display: flex; flex-direction: column; gap: .3rem;
+      align-items: flex-end;
+    }
+
+    /* ─── CTA ─── */
+    .cta-block {
+      background: var(--ink); color: var(--bg);
+      padding: 5rem 3rem; margin-top: 7rem;
+      text-align: center;
+    }
+    .cta-block h2 {
+      font-family: 'Instrument Serif', serif;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 400; letter-spacing: -1.5px;
+      line-height: 1.05; max-width: 700px; margin: 0 auto;
+    }
+    .cta-block h2 i { color: var(--accent); font-style: italic; }
+    .cta-block p {
+      font-size: 1rem; color: rgba(255,255,255,.6);
+      margin-top: 1.2rem; max-width: 500px;
+      margin-left: auto; margin-right: auto;
+    }
+    .cta-actions {
+      margin-top: 2.5rem; display: flex; justify-content: center; gap: .7rem; flex-wrap: wrap;
+    }
+    .cta-block .btn-outline { color: var(--bg); border-color: rgba(255,255,255,.3); }
+    .cta-block .btn-outline:hover { background: var(--bg); color: var(--ink); }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 900px) {
+      .hero { padding: 3rem 1.2rem 5rem; }
+      .hero-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .hero-photo-wrap { max-width: 280px; margin: 0; }
+      .stats-inner { grid-template-columns: 1fr 1fr; padding: 0 1.2rem; }
+      .stat-cell:nth-child(2) { border-right: none; }
+      .stat-cell:nth-child(1), .stat-cell:nth-child(2) { border-bottom: 1px solid var(--line); }
+      .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .about-lead, .about-body { grid-column: 1; }
+      .contact-block { grid-column: 1; grid-row: auto; border-left: none; padding-left: 0; border-top: 1px solid var(--line); padding-top: 2rem; }
+      .interests-grid { grid-template-columns: 1fr; }
+      .pub-row { grid-template-columns: 1fr; gap: .5rem; }
+      .pub-badges { flex-direction: row; align-items: flex-start; }
+      .cta-block { padding: 4rem 1.5rem; margin-top: 5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="index.html">Milad <i>Baghersad</i></a>
+  <input class="nav-toggle" type="checkbox" id="nav-toggle-home" aria-label="Toggle navigation" />
+  <label class="nav-menu-toggle" for="nav-toggle-home" aria-hidden="true">
+    <span></span><span></span><span></span>
+  </label>
+  <div class="nav-links">
+    <a href="index.html" class="active">Home</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="cv.html">CV</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-kicker">ASSOCIATE PROFESSOR · FAU · 2026</div>
+      <h1>Milad<br/><i>Baghersad</i></h1>
+      <p class="hero-role">
+        Research at the intersection of <strong>operations management</strong>, <strong>information systems</strong>, and <strong>business analytics</strong> — designing decisions under uncertainty.
+      </p>
+      <div class="hero-affil">
+        IT &amp; OPERATIONS MANAGEMENT · COLLEGE OF BUSINESS<br/>
+        FLORIDA ATLANTIC UNIVERSITY · BOCA RATON, FL
+      </div>
+      <div class="hero-actions">
+        <a href="mailto:mbaghersad@fau.edu" class="btn btn-primary">Get in touch →</a>
+        <a href="CV_of_Milad_Baghersad_2026.pdf" target="_blank" class="btn btn-outline">Download CV</a>
+      </div>
+    </div>
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-block"></div>
+      <img src="photo_2026-04-24_08-48-40.jpg" alt="Milad Baghersad" class="hero-photo" />
+      <div class="hero-photo-label"><strong>Associate Professor</strong> · FAU</div>
+    </div>
+  </div>
+</header>
+
+<!-- STATS -->
+<div class="stats-strip">
+  <div class="stats-inner">
+    <div class="stat-cell">
+      <div class="stat-num">20</div>
+      <div class="stat-label">JOURNAL ARTICLES</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">05</div>
+      <div class="stat-label">AJG 4</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">'23</div>
+      <div class="stat-label">SCHOLAR OF THE YEAR</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">06<i>+</i></div>
+      <div class="stat-label">COURSES TAUGHT</div>
+    </div>
+  </div>
+</div>
+
+<div class="page">
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="sec-marker">
+      <span class="sec-num">01 / ABOUT</span>
+      <div class="sec-title"><h2>The <i>work</i></h2></div>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="about-grid">
+      <p class="about-lead">
+        I study how organizations design decisions under uncertainty — when outcomes depend on the <i>architecture</i> of information, choices, and the analytics that support them.
+      </p>
+      <div class="about-body">
+        <p>I am an <strong>Associate Professor (with tenure)</strong> of Information Technology and Operations Management at Florida Atlantic University. I received my Ph.D. in Business (Business Information Technology) from Virginia Tech in 2018, with a secondary major in Disaster Risk Management.</p>
+        <p>My work combines analytical modeling, empirical analysis, and advanced analytics, with applications in resilient operations, humanitarian systems, collective-action environments, and AI-enabled decision making. It has appeared in <em>Production and Operations Management</em>, <em>European Journal of Operational Research</em>, <em>Decision Sciences</em>, <em>Risk Analysis</em>, and <em>Regional Studies</em>. In 2023, I was named the <strong>College of Business Scholar of the Year</strong>.</p>
+      </div>
+
+      <div class="contact-block">
+        <div class="contact-label">— CONTACT</div>
+        <div class="contact-row">
+          <div class="contact-row-label">EMAIL</div>
+          <div class="contact-row-val"><a href="mailto:mbaghersad@fau.edu">mbaghersad@fau.edu</a></div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-row-label">OFFICE</div>
+          <div class="contact-row-val">Fleming Hall 215<br/>Boca Raton Campus</div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-row-label">PHONE</div>
+          <div class="contact-row-val">(561) 297-3179</div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-row-label">ELSEWHERE</div>
+          <div class="contact-row-val">
+            <a href="https://scholar.google.com/citations?user=qv0lAK8AAAAJ&hl=en&oi=ao" target="_blank">Scholar</a> &nbsp;
+            <a href="https://www.linkedin.com/in/miladbaghersad/" target="_blank">LinkedIn</a> &nbsp;
+            <a href="https://orcid.org/0000-0002-2748-9577" target="_blank">ORCID</a> &nbsp;
+            <a href="https://business.fau.edu/faculty-research/faculty-profiles/profile/mbaghersad.php" target="_blank">FAU Profile</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research-preview">
+    <div class="sec-marker">
+      <span class="sec-num">02 / RESEARCH</span>
+      <div class="sec-title"><h2>Areas of <i>inquiry</i></h2></div>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="interests-grid" style="grid-template-columns: repeat(3, 1fr);">
+      <div class="interest-cell">
+        <div class="interest-num">→ DIRECTION 01</div>
+        <h3>Information Design</h3>
+        <p>How disclosure, transparency, and communication policies shape participation and coordination in volunteer and collective-action systems — information as an endogenous operational choice.</p>
+      </div>
+      <div class="interest-cell">
+        <div class="interest-num">→ DIRECTION 02</div>
+        <h3>Donation-Menu Design</h3>
+        <p>Reframing restricted giving as a design problem: how nonprofits can structure donation menus to balance donor preferences, funding flexibility, and operational performance.</p>
+      </div>
+      <div class="interest-cell">
+        <div class="interest-num">→ DIRECTION 03</div>
+        <h3>Analytics &amp; AI</h3>
+        <p>Deploying analytics and AI for organizational decisions — including retrieval-augmented enterprise AI under adversarial risk and trustworthy human–AI decision support.</p>
+      </div>
+      <div class="interest-cell">
+        <div class="interest-num">→ FOUNDATION</div>
+        <h3>Supply Chain Resilience</h3>
+        <p>Published work on sourcing under disruption risk, firm-level impacts of disruptions, and the performance implications of operational strategies.</p>
+      </div>
+      <div class="interest-cell">
+        <div class="interest-num">→ FOUNDATION</div>
+        <h3>Public-Sector Resilience</h3>
+        <p>Pandemic response coordination, epidemic investment, and equity–efficiency tradeoffs in critical infrastructure planning.</p>
+      </div>
+      <div class="interest-cell">
+        <div class="interest-num">→ METHODS</div>
+        <h3>Pluralistic Toolkit</h3>
+        <p>Optimization, stochastic and robust modeling, empirical methods, network analysis, and large-scale computational analytics.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SELECTED PUBS -->
+  <section id="selected">
+    <div class="sec-marker">
+      <span class="sec-num">03 / SELECTED WORK</span>
+      <div class="sec-title"><h2>Recent <i>publications</i></h2></div>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="pub-row">
+      <div class="pub-year">2025</div>
+      <div>
+        <div class="pub-title">A Deep Learning-based Adaptive Cyber Disaster Management Framework</div>
+        <div class="pub-authors">Neshenko, N., Bou-Harb, E., Borivoje, F., <strong>Baghersad, M.</strong></div>
+        <div class="pub-venue">Journal of Big Data · 12(179)</div>
+      </div>
+      <div class="pub-badges">
+        <a class="doi" href="https://doi.org/10.1186/s40537-025-01241-3" target="_blank">↗ DOI</a>
+      </div>
+    </div>
+
+    <div class="pub-row">
+      <div class="pub-year">2024</div>
+      <div>
+        <div class="pub-title">Trade-offs Between Equity and Efficiency in Prioritizing Critical Infrastructure Investments</div>
+        <div class="pub-authors"><strong>Baghersad, M.</strong>, Zobel, C. W., Farahani, M., Behara, R. S.</div>
+        <div class="pub-venue">Production and Operations Management · 34(4), 590–611</div>
+      </div>
+      <div class="pub-badges">
+        <span class="badge badge-ft50">FT50</span>
+        <span class="badge badge-ajg">AJG 4</span>
+        <a class="doi" href="https://doi.org/10.1177/10591478241243387" target="_blank">↗ DOI</a>
+      </div>
+    </div>
+
+    <div class="pub-row">
+      <div class="pub-year">2024</div>
+      <div>
+        <div class="pub-title">Regional Policy Coordination of Pandemic Responses Using An Iterative Mobility-driven Algorithm</div>
+        <div class="pub-authors"><strong>Baghersad, M.</strong>, Gumus, G., Huang, C. D., Behara, R. S.</div>
+        <div class="pub-venue">Regional Studies · 58(2), 393–408</div>
+      </div>
+      <div class="pub-badges">
+        <span class="badge badge-ajg">AJG 4</span>
+        <a class="doi" href="https://doi.org/10.1080/00343404.2023.2220749" target="_blank">↗ DOI</a>
+      </div>
+    </div>
+
+    <div class="pub-row">
+      <div class="pub-year">2023</div>
+      <div>
+        <div class="pub-title">Modularity Maximization to Design Contiguous Policy Zones for Pandemic Response</div>
+        <div class="pub-authors"><strong>Baghersad, M.</strong>, Emadikhiav, M., Huang, C. D., Behara, R. S.</div>
+        <div class="pub-venue">European Journal of Operational Research · 304(1), 99–112</div>
+      </div>
+      <div class="pub-badges">
+        <span class="badge badge-ajg">AJG 4</span>
+        <a class="doi" href="https://doi.org/10.1016/j.ejor.2022.01.012" target="_blank">↗ DOI</a>
+      </div>
+    </div>
+
+    <div style="margin-top: 2.5rem;">
+      <a href="publications.html" class="btn btn-outline">View all 20 publications →</a>
+    </div>
+  </section>
+
+</div>
+
+<!-- CTA -->
+<div class="cta-block">
+  <h2>Research <i>collaboration</i>, reviewing, or advising — let's talk.</h2>
+  <p>Always interested in conversations on information design, humanitarian operations, AI-enabled decision systems, and resilience.</p>
+  <div class="cta-actions">
+    <a href="mailto:mbaghersad@fau.edu" class="btn btn-accent">✉ &nbsp;mbaghersad@fau.edu</a>
+    <a href="CV_of_Milad_Baghersad_2026.pdf" target="_blank" class="btn btn-outline">Download CV</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-name">Milad <i>Baghersad</i></div>
+    <div class="footer-meta">
+      © 2026 · FLORIDA ATLANTIC UNIVERSITY ·
+      <a href="mailto:mbaghersad@fau.edu">MBAGHERSAD@FAU.EDU</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

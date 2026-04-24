@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications | Milad Baghersad</title>
+  <meta name="description" content="Publications by Milad Baghersad in operations management, information systems, analytics, resilience, supply chains, disaster risk, and AI-enabled decision systems." />
+  <link rel="canonical" href="https://miladbaghersad.github.io/publications.html" />
+  <meta property="og:title" content="Publications | Milad Baghersad" />
+  <meta property="og:description" content="Journal articles, book chapters, and other academic writings by Milad Baghersad." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://miladbaghersad.github.io/publications.html" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .page-hero-inner {
+      display: grid; grid-template-columns: 1.3fr 1fr;
+      gap: 3rem; align-items: end;
+    }
+    .page-hero-meta {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 0; border-left: 1px solid var(--line);
+    }
+    .ph-stat { padding: 1rem 1.5rem; border-right: 1px solid var(--line); }
+    .ph-stat:last-child { border-right: none; }
+    .ph-stat-n {
+      font-family: 'Instrument Serif', serif;
+      font-size: 2.4rem; line-height: 1; letter-spacing: -1px;
+    }
+    .ph-stat-n i { color: var(--accent); }
+    .ph-stat-l {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .7rem; color: var(--muted); letter-spacing: 1px;
+      margin-top: .5rem;
+    }
+
+    /* Year marker */
+    .year-marker {
+      display: flex; align-items: baseline; gap: 1.5rem;
+      padding: 3rem 0 1rem;
+    }
+    .year-big {
+      font-family: 'Instrument Serif', serif;
+      font-size: 4.5rem; font-weight: 400;
+      line-height: 1; letter-spacing: -2.5px;
+      color: var(--ink);
+    }
+    .year-line { flex: 1; height: 1px; background: var(--line-dk); }
+    .year-count {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .75rem; color: var(--muted); letter-spacing: 1px;
+    }
+
+    /* Publication item */
+    .pub {
+      display: grid; grid-template-columns: 40px 1fr auto;
+      gap: 2rem; padding: 1.8rem 1rem;
+      border-bottom: 1px solid var(--line);
+      border-left: 3px solid transparent;
+      align-items: start;
+      transition: background .2s, border-color .2s;
+    }
+    .pub:hover { background: rgba(0,51,102,.035); border-left-color: var(--accent); }
+    .pub-n {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .78rem; color: var(--faint); padding-top: .4rem;
+    }
+    .pub-title {
+      font-family: 'Instrument Serif', serif;
+      font-size: 1.35rem; font-weight: 400; line-height: 1.25;
+      letter-spacing: -.3px; color: var(--ink);
+    }
+    .pub-authors {
+      font-size: .82rem; color: var(--muted); margin-top: .5rem; line-height: 1.6;
+    }
+    .pub-authors strong { color: var(--ink); font-weight: 600; }
+    .pub-venue {
+      font-size: .85rem; color: var(--ink-soft);
+      margin-top: .4rem; font-style: italic;
+    }
+    .pub-badges { display: flex; flex-direction: column; gap: .3rem; align-items: flex-end; }
+
+    /* Chapter/book */
+    .book-item {
+      padding: 1.8rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .book-item:first-child { border-top: 1px solid var(--line); }
+    .book-kind {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .7rem; color: var(--accent); letter-spacing: 1.5px;
+      margin-bottom: .7rem;
+    }
+    .book-title {
+      font-family: 'Instrument Serif', serif;
+      font-size: 1.35rem; font-weight: 400; line-height: 1.3;
+      letter-spacing: -.3px;
+    }
+    .book-meta { font-size: .85rem; color: var(--muted); margin-top: .5rem; line-height: 1.7; }
+    .book-meta strong { color: var(--ink); font-weight: 600; }
+    .book-meta em { font-style: italic; }
+
+    @media (max-width: 780px) {
+      .page-hero-inner { grid-template-columns: 1fr; gap: 2rem; }
+      .page-hero-meta { border-left: none; border-top: 1px solid var(--line); padding-top: 1rem; }
+      .ph-stat { padding: 1rem 0; }
+      .pub { grid-template-columns: 1fr; gap: .5rem; }
+      .pub-badges { flex-direction: row; align-items: flex-start; }
+      .year-big { font-size: 3rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="index.html">Milad <i>Baghersad</i></a>
+  <input class="nav-toggle" type="checkbox" id="nav-toggle-publications" aria-label="Toggle navigation" />
+  <label class="nav-menu-toggle" for="nav-toggle-publications" aria-hidden="true">
+    <span></span><span></span><span></span>
+  </label>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html" class="active">Publications</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="cv.html">CV</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div>
+      <div class="ph-kicker">— PUBLICATIONS · 2013 → 2025</div>
+      <h1>Publications.</h1>
+    </div>
+    <div class="page-hero-meta">
+      <div class="ph-stat">
+        <div class="ph-stat-n"><i>20</i></div>
+        <div class="ph-stat-l">JOURNAL ARTICLES</div>
+      </div>
+      <div class="ph-stat">
+        <div class="ph-stat-n">05</div>
+        <div class="ph-stat-l">AJG 4</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page">
+
+  <!-- 2025 -->
+  <div class="year-marker">
+    <div class="year-big">2025</div>
+    <div class="year-line"></div>
+    <div class="year-count">01 / 20</div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-n">01</div>
+    <div>
+      <div class="pub-title">A Deep Learning-based Adaptive Cyber Disaster Management Framework</div>
+      <div class="pub-authors">Neshenko, N., Bou-Harb, E., Borivoje, F., <strong>Baghersad, M.</strong></div>
+      <div class="pub-venue">Journal of Big Data · 12(179)</div>
+    </div>
+    <div class="pub-badges">
+      <a class="doi" href="https://doi.org/10.1186/s40537-025-01241-3" target="_blank">↗ DOI</a>
+    </div>
+  </div>
+
+  <!-- 2024 -->
+  <div class="year-marker">
+    <div class="year-big">2024</div>
+    <div class="year-line"></div>
+    <div class="year-count">02 / 20</div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-n">02</div>
+    <div>
+      <div class="pub-title">Trade-offs Between Equity and Efficiency in Prioritizing Critical Infrastructure Investments: A Case of Stormwater Management Systems</div>
+      <div class="pub-authors"><strong>Baghersad, M.</strong>, Zobel, C. W., Farahani, M., Behara, R. S.</div>
+      <div class="pub-venue">Production and Operations Management · 34(4), 590–611</div>
+    </div>
+    <div class="pub-badges">
+      <span class="badge badge-ft50">FT50</span>
+      <span class="badge badge-ajg">AJG 4</span>
+      <a class="doi" href="https://doi.org/10.1177/10591478241243387" target="_blank">↗ DOI</a>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-n">03</div>
+    <div>
+      <div class="pub-title">Regional Policy Coordination of Pandemic Responses Using An Iterative Mobility-driven Algorithm</div>
+      <div class="pub-authors"><strong>Baghersad, M.</strong>, Gumus, G., Huang, C. D., Behara, R. S.</div>
+      <div class="pub-venue">Regional Studies · 58(2), 393–408</div>
+    </div>
+    <div class="pub-badges">
+      <span class="badge badge-ajg">AJG 4</span>
+      <a class="doi" href="https://doi.org/10.1080/00343404.2023.2220749" target="_blank">↗ DOI</a>
+    </div>
+  </div>
+
+  <!-- 2023 -->
+  <div class="year-marker">
+    <div class="year-big">2023</div>
+    <div class="year-line"></div>
+    <div class="year-count">01 / 20</div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-n">04</div>
+    <div>
+      <div class="pub-title">Modularity Maximization to Design Contiguous Policy Zones for Pandemic Response</div>
+      <div class="pub-authors"><strong>Baghersad, M.</strong>, Emadikhiav, M., Huang, C. D., Behara, R. S.</div>
+      <div class="pub-venue">European Journal of Operational Research · 304(1), 99–112</div>
+    </div>
+    <div class="pub-badges">
+      <span class="badge badge-ajg">AJG 4</span>
+      <a class="doi" href="https://doi.org/10.1016/j.ejor.2022.01.012" target="_blank">↗ DOI</a>
+    </div>
+  </div>
+
+  <!-- 2022 -->
+  <div class="year-marker">
+    <div class="year-big">2022</div>
+    <div class="year-line"></div>
+    <div class="year-count">04 / 20</div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-n">05</div>
+    <div>
+      <div class="pub-title">The Roles of Prior Experience and the Location on the Severity of Supply Chain Disruptions</div>
+      <div class="pub-authors"><strong>Baghersad, M.</strong>, Zobel, C. W., Lowry, P. B., Chatterjee, S.</div>
+      <div class="pub-venue">International Journal of Production Research · 60(16), 5051–5070</div>
+    </div>
+    <div class="pub-badges">
+      <span class="badge badge-ajg3">AJG 3</span>
+      <a class="doi" href="https://doi.org/10.1080/00207543.2021.1948136" target="_blank">↗ DOI</a>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-n">06</div>
+    <div>
+      <div class="pub-title">Organizational Resilience to Disruption Risks: Developing Metrics and Testing Effectiveness of Operational Strategies</div>
+      <div class="pub-authors"><strong>Baghersad, M.</strong>, Zobel, C. W.</div>
+      <div class="pub-venue">Risk Analysis · 42(3), 561–579</div>
+    </div>
+    <div class="pub-badges">
+      <span class="badge badge-ajg">AJG 4</span>
+      <a class="doi" href="https://doi.org/10.1111/risa.13769" target="_blank">↗ DOI</a>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-n">07</div>
+    <div>
+      <div class="pub-title">Optimal Investment in Prevention and Recovery for Mitigating Epidemic Risks</div>
+      <div class="pub-authors">Huang, C. D., <strong>Baghersad, M.</strong>, Behara, R. S., Zobel, C. W.</div>
+      <div class="pub-venue">Risk Analysis · 42(1), 206–220</div>
+    </div>
+    <div class="pub-badges">
+      <span class="badge badge-ajg">AJG 4</span>
+      <a class="doi" href="https://doi.org/10.1111/risa.13707" target="_blank">↗ DOI</a>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-n">08</div>
+    <div>
+      <div class="pub-title">A multi-attribute supply chain network resilience assessment framework based on SNA-inspired indicators</div>
+      <div class="pub-authors">Kazemian, I., Torabi, S. A., Zobel, C. W., Li, Y., <strong>Baghersad, M.</strong></div>
+      <div class="pub-venue">Operational Research · 22, 1853–1883</div>
+    </div>
+    <div class="pub-badges">
+      <span class="badge badge-gray">AJG 1</span>
+      <a class="doi" href="https://doi.org/10.1007/s12351-021-00644-3" target="_blank">↗ DOI</a>
+    </div>
+  </div>
+
+  <!-- 2021 -->
+  <div class="year-marker">
+    <div class="year-big">2021</div>
+    <div class="year-line"></div>
+    <div class="year-count">03 / 20</div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-n">09</div>
+    <div>
+      <div class="pub-title">Assessing the extended impacts of supply chain disruptions on firms: An empirical study</div>
+      <div class="pub-authors"><strong>Baghersad, M.</strong>, Zobel, C. W.</div>
+      <div class="pub-venue">International Journal of Production Economics · 231, 107862</div>
+    </div>
+    <div class="pub-badges">
+      <span class="badge badge-ajg3">AJG 3</span>
+      <a class="doi" href="https://doi.org/10.1016/j.ijpe.2020.107862" target="_blank">↗ DOI</a>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-n">10</div>
+    <div>
+      <div class="pub-title">Establishing a frame of reference for measuring disaster resilience</div>
+      <div class="pub-authors">Zobel, C. W., MacKenzie, C. A., <strong>Baghersad, M.</strong>, Li, Y.</div>
+      <div class="pub-venue">Decision Support Systems · 140, 113406</div>
+    </div>
+    <div class="pub-badges">
+      <span class="badge badge-ajg3">AJG 3</span>
+      <a class="doi" href="https://doi.org/10.1016/j.dss.2020.113406" target="_blank">↗ DOI</a>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-n">11</div>
+    <div>
+      <div class="pub-title">OM Research: Leading Authors and Institutions</div>
+      <div class="pub-authors">Koufteros, X.A., Babbar, S., Behara, R.S., <strong>Baghersad, M.</strong></div>
+      <div class="pub-venue">Decision Sciences · 52(1), 8–77</div>
+    </div>
+    <div class="pub-badges">
+      <span class="badge badge-ajg3">AJG 3</span>
+      <a class="doi" href="https://doi.org/10.1111/deci.12452" target="_blank">↗ DOI</a>
+    </div>
+  </div>
+
+  <!-- 2020 -->
+  <div class="year-marker">
+    <div class="year-big">2020</div>
+    <div class="year-line"></div>
+    <div class="year-count">03 / 20</div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-n">12</div>
+    <div>
+      <div class="pub-title">Sourcing decisions under conditions of risk and resilience: a behavioral study</div>
+      <div class="pub-authors">Mena, C., Melnyk, S. A., <strong>Baghersad, M.</strong>, Zobel, C. W.</div>
+      <div class="pub-venue">Decision Sciences · 51(4), 985–1014</div>
+    </div>
+    <div class="pub-badges">
+      <span class="badge badge-ajg3">AJG 3</span>
+      <a class="doi" href="https://doi.org/10.1111/deci.12403" target="_blank">↗ DOI</a>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-n">13</div>
+    <div>
+      <div class="pub-title">Safeguarding Korean Export Trade through Social Media-Driven Risk Identification and Characterization</div>
+      <div class="pub-authors">Sithipolvanichgul, J., Abrahams, A. S., Goldberg, D. M., Zaman, N., <strong>Baghersad, M.</strong>, et al.</div>
+      <div class="pub-venue">Journal of Korea Trade · 24(8), 39–62</div>
+    </div>
+    <div class="pub-badges">
+      <a class="doi" href="https://doi.org/10.35611/jkt.2020.24.8.39" target="_blank">↗ DOI</a>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-n">14</div>
+    <div>
+      <div class="pub-title">Analytically Comparing Disaster Resilience across Multiple Dimensions: Leveraging 311 Data</div>
+      <div class="pub-authors">Zobel, C. W., <strong>Baghersad, M.</strong></div>
+      <div class="pub-venue">Socio-Economic Planning Sciences · 69, 100679</div>
+    </div>
+    <div class="pub-badges">
+      <span class="badge badge-gray">AJG 2</span>
+      <a class="doi" href="https://doi.org/10.1016/j.seps.2018.12.005" target="_blank">↗ DOI</a>
+    </div>
+  </div>
+
+  <!-- 2018 -->
+  <div class="year-marker">
+    <div class="year-big">2018</div>
+    <div class="year-line"></div>
+    <div class="year-count">01 / 20</div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-n">15</div>
+    <div>
+      <div class="pub-title">An investigation into online videos as a source of safety hazard reports</div>
+      <div class="pub-authors">Nasri, L., <strong>Baghersad, M.</strong>, Gruss, R., Marucchi, N., Abrahams, A. S., Ehsani, J. P.</div>
+      <div class="pub-venue">Journal of Safety Research · 69, 89–99</div>
+    </div>
+    <div class="pub-badges">
+      <span class="badge badge-gray">AJG 2</span>
+      <a class="doi" href="https://doi.org/10.1016/j.jsr.2018.03.004" target="_blank">↗ DOI</a>
+    </div>
+  </div>
+
+  <!-- 2015 -->
+  <div class="year-marker">
+    <div class="year-big">2015</div>
+    <div class="year-line"></div>
+    <div class="year-count">03 / 20</div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-n">16</div>
+    <div>
+      <div class="pub-title">Economic impact of production bottlenecks caused by disasters impacting interdependent industry sectors</div>
+      <div class="pub-authors"><strong>Baghersad, M.</strong>, Zobel, C. W.</div>
+      <div class="pub-venue">International Journal of Production Economics · 168, 71–80</div>
+    </div>
+    <div class="pub-badges">
+      <span class="badge badge-ajg3">AJG 3</span>
+      <a class="doi" href="https://doi.org/10.1016/j.ijpe.2015.06.011" target="_blank">↗ DOI</a>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-n">17</div>
+    <div>
+      <div class="pub-title">Resilient supplier selection and order allocation under operational and disruption risks</div>
+      <div class="pub-authors">Torabi, S. A., <strong>Baghersad, M.</strong>, Mansouri, S. A.</div>
+      <div class="pub-venue">Transportation Research Part E · 79, 22–48</div>
+    </div>
+    <div class="pub-badges">
+      <span class="badge badge-ajg3">AJG 3</span>
+      <a class="doi" href="https://doi.org/10.1016/j.tre.2015.03.005" target="_blank">↗ DOI</a>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-n">18</div>
+    <div>
+      <div class="pub-title">Semi-online patient scheduling in pathology laboratories</div>
+      <div class="pub-authors">Azadeh, A., <strong>Baghersad, M.</strong>, Farahani, M. H., Zarrin, M.</div>
+      <div class="pub-venue">Artificial Intelligence in Medicine · 64(3), 217–226</div>
+    </div>
+    <div class="pub-badges">
+      <a class="doi" href="https://doi.org/10.1016/j.artmed.2015.05.001" target="_blank">↗ DOI</a>
+    </div>
+  </div>
+
+  <!-- 2014 -->
+  <div class="year-marker">
+    <div class="year-big">2014</div>
+    <div class="year-line"></div>
+    <div class="year-count">01 / 20</div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-n">19</div>
+    <div>
+      <div class="pub-title">Scheduling prioritized patients in emergency department laboratories</div>
+      <div class="pub-authors">Azadeh, A., Hosseinabadi Farahani, M., Torabzadeh, S., <strong>Baghersad, M.</strong></div>
+      <div class="pub-venue">Computer Methods and Programs in Biomedicine · 117(2), 61–70</div>
+    </div>
+    <div class="pub-badges">
+      <a class="doi" href="https://doi.org/10.1016/j.cmpb.2014.08.006" target="_blank">↗ DOI</a>
+    </div>
+  </div>
+
+  <!-- 2013 -->
+  <div class="year-marker">
+    <div class="year-big">2013</div>
+    <div class="year-line"></div>
+    <div class="year-count">01 / 20</div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-n">20</div>
+    <div>
+      <div class="pub-title">A new hybrid GA-PSO method for solving multi-period inventory routing problem with considering financial decisions</div>
+      <div class="pub-authors">Rabbani, M., <strong>Baghersad, M.</strong>, Jafari, R.</div>
+      <div class="pub-venue">Journal of Industrial Engineering and Management · 6(4), 909–929</div>
+    </div>
+    <div class="pub-badges">
+      <a class="doi" href="http://dx.doi.org/10.3926/jiem.629" target="_blank">↗ DOI</a>
+    </div>
+  </div>
+
+  <!-- Books -->
+  <section>
+    <div class="sec-marker" style="margin-top: 4rem;">
+      <span class="sec-num">— BOOKS &amp; CHAPTERS</span>
+      <div class="sec-title"><h2>Other <i>writings</i></h2></div>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="book-item">
+      <div class="book-kind">— BOOK CHAPTER · 2018</div>
+      <div class="book-title">An Approach for Quantifying the Multidimensional Nature of Disaster Resilience in the Context of Municipal Service Provision</div>
+      <div class="book-meta">
+        Zobel, C. W., <strong>Baghersad, M.</strong>, Zhang, Y. &nbsp;·&nbsp;
+        In: Fekete A., Fiedrich F. (eds) <em>Urban Disaster Resilience and Security</em>. The Urban Book Series. Springer, Cham. &nbsp;
+        <a class="doi" href="https://doi.org/10.1007/978-3-319-68606-6_15" target="_blank">↗ DOI</a>
+      </div>
+    </div>
+
+    <div class="book-item">
+      <div class="book-kind">— BOOK · 2016</div>
+      <div class="book-title">Multi-attribute Decision-making Techniques: An Applied Approach</div>
+      <div class="book-meta">
+        Torabi, S. A., <strong>Baghersad, M.</strong> &nbsp;·&nbsp;
+        University of Tehran Press, Tehran. <em>Book in Farsi.</em> &nbsp;
+        <a class="doi" href="http://press.ut.ac.ir/book_2936.html" target="_blank">↗ Publisher</a>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-name">Milad <i>Baghersad</i></div>
+    <div class="footer-meta">
+      © 2026 · FLORIDA ATLANTIC UNIVERSITY ·
+      <a href="mailto:mbaghersad@fau.edu">MBAGHERSAD@FAU.EDU</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

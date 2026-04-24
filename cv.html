@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV | Milad Baghersad</title>
+  <meta name="description" content="Curriculum vitae of Milad Baghersad, Associate Professor of Information Technology and Operations Management at Florida Atlantic University." />
+  <link rel="canonical" href="https://miladbaghersad.github.io/cv.html" />
+  <meta property="og:title" content="CV | Milad Baghersad" />
+  <meta property="og:description" content="Academic background, employment, awards, service, and CV of Milad Baghersad." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://miladbaghersad.github.io/cv.html" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .page-hero-inner {
+      display: grid; grid-template-columns: 1.3fr 1fr;
+      gap: 3rem; align-items: end;
+    }
+    .ph-right {
+      text-align: right;
+    }
+
+    /* Timeline */
+    .tline { margin-top: 0; }
+    .tline-item {
+      display: grid; grid-template-columns: 170px 1fr;
+      gap: 2rem; padding: 2rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .tline-item:first-child { border-top: 1px solid var(--line); }
+    .tline-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .82rem; color: var(--muted); letter-spacing: .5px;
+      padding-top: .3rem; line-height: 1.5;
+    }
+    .tline-date .current {
+      color: var(--accent); font-weight: 600;
+    }
+    .tline-date .current::before { content: '● '; }
+    .tline h3 {
+      font-family: 'Instrument Serif', serif;
+      font-size: 1.55rem; font-weight: 400; line-height: 1.2;
+      letter-spacing: -.3px; color: var(--ink);
+    }
+    .tline-sub {
+      font-size: .9rem; color: var(--ink-soft);
+      margin-top: .4rem;
+    }
+    .tline-note {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .75rem; color: var(--muted);
+      margin-top: .5rem; letter-spacing: .3px;
+    }
+
+    /* Awards */
+    .awards-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr);
+      gap: 1px; background: var(--line); border: 1px solid var(--line);
+    }
+    .award {
+      background: var(--bg); padding: 2rem 1.8rem;
+      display: flex; flex-direction: column; gap: .5rem;
+    }
+    .award-year {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .72rem; color: var(--accent);
+      letter-spacing: 1.5px; margin-bottom: .3rem;
+    }
+    .award h3 {
+      font-family: 'Instrument Serif', serif;
+      font-size: 1.4rem; font-weight: 400; line-height: 1.2;
+      letter-spacing: -.3px;
+    }
+    .award p { font-size: .84rem; color: var(--muted); margin-top: .3rem; }
+    .award-featured { grid-column: 1 / -1; background: var(--ink); color: var(--bg); }
+    .award-featured .award-year { color: var(--accent); }
+    .award-featured h3 { color: var(--bg); }
+    .award-featured p { color: rgba(255,255,255,.7); }
+
+    /* Service sections */
+    .srv-block { margin-bottom: 3rem; }
+    .srv-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .75rem; color: var(--accent);
+      letter-spacing: 1.5px; padding-bottom: .8rem;
+      border-bottom: 1px solid var(--accent);
+      margin-bottom: 1.2rem; display: inline-block;
+    }
+    .srv-item {
+      display: grid; grid-template-columns: 1fr auto;
+      gap: 2rem; padding: 1.1rem 0;
+      border-bottom: 1px solid var(--line); align-items: baseline;
+    }
+    .srv-item:last-child { border-bottom: none; }
+    .srv-role { font-size: .95rem; color: var(--ink); }
+    .srv-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .78rem; color: var(--muted); letter-spacing: .5px; white-space: nowrap;
+    }
+    .srv-date .current { color: var(--accent); }
+
+    /* Reviewer tags */
+    .reviewer-block {
+      padding: 1.5rem 0; border-top: 1px solid var(--line);
+      margin-top: 1rem;
+    }
+    .reviewer-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .78rem; color: var(--muted);
+      letter-spacing: .5px; margin-bottom: 1rem;
+    }
+    .reviewer-tags { display: flex; flex-wrap: wrap; gap: .5rem; }
+    .reviewer-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .75rem; color: var(--ink-soft);
+      background: var(--bg-alt); padding: .3rem .75rem;
+      letter-spacing: .2px;
+    }
+
+    @media (max-width: 780px) {
+      .page-hero-inner { grid-template-columns: 1fr; gap: 1.5rem; }
+      .ph-right { text-align: left; }
+      .tline-item { grid-template-columns: 1fr; gap: .5rem; }
+      .awards-grid { grid-template-columns: 1fr; }
+      .srv-item { grid-template-columns: 1fr; gap: .3rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="index.html">Milad <i>Baghersad</i></a>
+  <input class="nav-toggle" type="checkbox" id="nav-toggle-cv" aria-label="Toggle navigation" />
+  <label class="nav-menu-toggle" for="nav-toggle-cv" aria-hidden="true">
+    <span></span><span></span><span></span>
+  </label>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="cv.html" class="active">CV</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div>
+      <div class="ph-kicker">— CURRICULUM VITAE · UPDATED JAN. 2026</div>
+      <h1>Curriculum <i>vitae</i>.</h1>
+    </div>
+    <div class="ph-right">
+      <a href="CV_of_Milad_Baghersad_2026.pdf" target="_blank" class="btn btn-primary">↓ &nbsp; Download PDF</a>
+    </div>
+  </div>
+</div>
+
+<div class="page">
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="sec-marker">
+      <span class="sec-num">01 / EDUCATION</span>
+      <div class="sec-title"><h2>Academic <i>background</i></h2></div>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="tline">
+      <div class="tline-item">
+        <div class="tline-date">2018<br/><span style="color:var(--faint);">PH.D.</span></div>
+        <div>
+          <h3>Ph.D. in Business — Business Information Technology</h3>
+          <div class="tline-sub">Pamplin College of Business · Virginia Tech · Blacksburg, VA</div>
+          <div class="tline-note">SECONDARY MAJOR · DISASTER RISK MANAGEMENT</div>
+        </div>
+      </div>
+      <div class="tline-item">
+        <div class="tline-date">2013<br/><span style="color:var(--faint);">M.SC.</span></div>
+        <div>
+          <h3>M.Sc. in Industrial Engineering</h3>
+          <div class="tline-sub">University of Tehran · Tehran, Iran</div>
+          <div class="tline-note">FIRST RANK GRADUATING STUDENT</div>
+        </div>
+      </div>
+      <div class="tline-item">
+        <div class="tline-date">2011<br/><span style="color:var(--faint);">B.SC.</span></div>
+        <div>
+          <h3>B.Sc. in Industrial Engineering</h3>
+          <div class="tline-sub">K. N. Toosi University of Technology · Tehran, Iran</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMPLOYMENT -->
+  <section id="employment">
+    <div class="sec-marker">
+      <span class="sec-num">02 / EMPLOYMENT</span>
+      <div class="sec-title"><h2>Career <i>path</i></h2></div>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="tline">
+      <div class="tline-item">
+        <div class="tline-date">AUG. 2025<br/><span class="current">PRESENT</span></div>
+        <div>
+          <h3>Associate Professor <span style="font-style:italic; color:var(--accent);">(with tenure)</span></h3>
+          <div class="tline-sub">Dept. of IT &amp; Operations Management · College of Business · Florida Atlantic University</div>
+        </div>
+      </div>
+      <div class="tline-item">
+        <div class="tline-date">AUG. 2019<br/>JUL. 2025</div>
+        <div>
+          <h3>Assistant Professor</h3>
+          <div class="tline-sub">Dept. of IT &amp; Operations Management · College of Business · Florida Atlantic University</div>
+        </div>
+      </div>
+      <div class="tline-item">
+        <div class="tline-date">AUG. 2018<br/>JUN. 2019</div>
+        <div>
+          <h3>Visiting Assistant Professor</h3>
+          <div class="tline-sub">Dept. of Operations &amp; Supply Chain Management · Monte Ahuja College of Business · Cleveland State University</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AWARDS -->
+  <section id="awards">
+    <div class="sec-marker">
+      <span class="sec-num">03 / RECOGNITION</span>
+      <div class="sec-title"><h2>Awards &amp; <i>honors</i></h2></div>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="awards-grid">
+      <div class="award award-featured">
+        <div class="award-year">— 2023</div>
+        <h3>College of Business Scholar of the Year Award</h3>
+        <p>Assistant Professor level · Florida Atlantic University</p>
+      </div>
+      <div class="award">
+        <div class="award-year">— 2022–2023</div>
+        <h3>Dean's Outstanding Junior Faculty Research Fellow</h3>
+        <p>College of Business · Florida Atlantic University</p>
+      </div>
+      <div class="award">
+        <div class="award-year">— 2016</div>
+        <h3>Doctoral Summer Research Grant</h3>
+        <p>Pamplin College of Business · Virginia Tech · $7,500</p>
+      </div>
+      <div class="award">
+        <div class="award-year">— 2014–2016</div>
+        <h3>Interdisciplinary Graduate Fellowship</h3>
+        <p>Disaster Resilience Program · Virginia Tech</p>
+      </div>
+      <div class="award">
+        <div class="award-year">— 2013</div>
+        <h3>First Rank M.S. Graduating Student</h3>
+        <p>Industrial Engineering · University of Tehran</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE -->
+  <section id="service">
+    <div class="sec-marker">
+      <span class="sec-num">04 / SERVICE</span>
+      <div class="sec-title"><h2>Contributions to the <i>field</i></h2></div>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="srv-block">
+      <div class="srv-label">— TO THE INSTITUTION</div>
+      <div class="srv-item">
+        <div class="srv-role">Member, University Faculty Senate</div>
+        <div class="srv-date"><span class="current">● FALL 2022 → CURRENT</span></div>
+      </div>
+      <div class="srv-item">
+        <div class="srv-role">Chair, ITOM AOL Committee (Graduate Programs)</div>
+        <div class="srv-date"><span class="current">● FALL 2024 → CURRENT</span></div>
+      </div>
+      <div class="srv-item">
+        <div class="srv-role">Member, ITOM Ph.D. Committee</div>
+        <div class="srv-date"><span class="current">● SPRING 2022 → CURRENT</span></div>
+      </div>
+      <div class="srv-item">
+        <div class="srv-role">Member, Faculty Search Committee (ITOM)</div>
+        <div class="srv-date">×4 TIMES</div>
+      </div>
+    </div>
+
+    <div class="srv-block">
+      <div class="srv-label">— TO THE DISCIPLINE</div>
+      <div class="srv-item">
+        <div class="srv-role">Track Co-chair · ISCRAM Conference</div>
+        <div class="srv-date">2021</div>
+      </div>
+      <div class="srv-item">
+        <div class="srv-role">Session Chair · DSI Annual Conference</div>
+        <div class="srv-date">2023</div>
+      </div>
+      <div class="srv-item">
+        <div class="srv-role">Mentor · IMI-FAU Supply Chain Analytics Competition</div>
+        <div class="srv-date">SPRING 2024</div>
+      </div>
+
+      <div class="reviewer-block">
+        <div class="reviewer-label">— AD-HOC REVIEWER</div>
+        <div class="reviewer-tags">
+          <span class="reviewer-tag">PRODUCTION &amp; OPERATIONS MANAGEMENT</span>
+          <span class="reviewer-tag">JOURNAL OF OPERATIONS MANAGEMENT</span>
+          <span class="reviewer-tag">EUROPEAN JOURNAL OF OPERATIONAL RESEARCH</span>
+          <span class="reviewer-tag">INT'L J. OF PRODUCTION RESEARCH</span>
+          <span class="reviewer-tag">INT'L J. OF PRODUCTION ECONOMICS</span>
+          <span class="reviewer-tag">COMPUTERS &amp; INDUSTRIAL ENGINEERING</span>
+          <span class="reviewer-tag">JOURNAL OF CLEANER PRODUCTION</span>
+          <span class="reviewer-tag">+ MANY OTHERS</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="srv-block">
+      <div class="srv-label">— TO THE COMMUNITY</div>
+      <div class="srv-item">
+        <div class="srv-role">Vice President · Iranian Society at Virginia Tech (ISVT)</div>
+        <div class="srv-date">2017 → 2018</div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-name">Milad <i>Baghersad</i></div>
+    <div class="footer-meta">
+      © 2026 · FLORIDA ATLANTIC UNIVERSITY ·
+      <a href="mailto:mbaghersad@fau.edu">MBAGHERSAD@FAU.EDU</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
